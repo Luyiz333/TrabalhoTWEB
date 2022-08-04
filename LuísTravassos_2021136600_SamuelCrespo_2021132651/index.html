@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KwSelect(TWEB)</title>
+    <link rel="stylesheet" href="./index.css"> 
+</head>
+<body>
+    <div id="header_2">
+        
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <a class="menu active" href="index.html">              <!--O Inicio-->
+                Início
+            </a>
+
+            <a class="menu" href="https://www.kwselect.pt/quemsomos">              <!--Quem somos-->
+                Quem Somos
+            </a>
+
+            <a class="menu" href="https://www.kwselect.pt/servicos">              <!--Os serviços-->
+                Serviços
+            </a>
+
+            <a class="menu" href="https://www.kwselect.pt/imoveis">              <!--Os imoveis-->
+                Imóveis
+            </a>
+
+            <a class="menu" href="https://www.kwselect.pt/luxo">              <!--O luxo-->
+                Luxo
+            </a>
+
+            <a class="menu" href="https://www.kwselect.pt/estudodemercadogratuito">              <!--mercado gratuito-->
+                Estudo de Mercado Gratuito
+            </a>
+
+            <a class="menu" href="https://www.kwselect.pt/formacoes">              <!--Formações-->
+                Formações
+            </a>
+
+            <a class="menu" href="https://www.kwselect.pt/contactos">              <!--Os contactos-->
+                Contactos
+            </a>
+        </div>
+
+        <div id="main">
+            <button class="openbtn" onclick="openNav()"><img src="img\Menu.PNG" height="29px" width="30px"></button>
+        </div>
+
+
+        <a class="logo" href="https://www.kwselect.pt">              <!--A logo-->
+            <img src="img\logo.png">
+        </a>
+
+        <a class="linguas">              <!--Línguas-->
+            <select class="linguas"> 
+                <option>PT</option> 
+                <option>ING</option>  
+            </select>
+        </a>
+    </div>
+<!--___________________________header_______________________________________________-->
+    <header>
+
+        <a class="logo" href="https://www.kwselect.pt">              <!--A logo-->
+                <img src="img\logo.png">
+        </a>
+
+        <div class="menu_centro">
+            <a class="menu active" href="index.html">              <!--O Inicio-->
+                Início
+            </a>
+
+            <a class="menu" href="https://www.kwselect.pt/quemsomos">              <!--Quem somos-->
+                Quem Somos
+            </a>
+
+            <a class="menu" href="https://www.kwselect.pt/servicos">              <!--Os serviços-->
+                Serviços
+            </a>
+
+            <a class="menu" href="https://www.kwselect.pt/imoveis">              <!--Os imoveis-->
+                Imóveis
+            </a>
+
+            <a class="menu" href="https://www.kwselect.pt/luxo">              <!--O luxo-->
+                Luxo
+            </a>
+
+            <a class="menu" href="https://www.kwselect.pt/estudodemercadogratuito">              <!--mercado gratuito-->
+                Estudo de Mercado Gratuito
+            </a>
+
+            <a class="menu" href="https://www.kwselect.pt/formacoes">              <!--Formações-->
+                Formações
+            </a>
+
+            <a class="menu" href="https://www.kwselect.pt/contactos">              <!--Os contactos-->
+                Contactos
+            </a>
+        </div>
+        
+        
+        <a class="linguas" onchange="location = this.value;">              <!--Línguas-->
+            <select class="linguas"> 
+                <option>PT</option> 
+                <option>ING</option>  
+            </select>
+        </a>
+
+    </header>
+
+    <!--___________________________header_______________________________________________-->
+    <!------------------------------------------imagem fundo---------------------------------------------------------------->
+    <div class="seccaocima">
+        <div class="opacidadecima"></div>
+        <div class="cortecima"></div>
+        <div id="padding">
+        <!--____________________tabela preços_____________________________________________-->
+            <div id="tabela_preços">
+                <p>Calcule o preço do seu imóvel de sonho!</p>
+
+
+                    <table>
+                        <tr class="cima">
+                            <td class="cima_tabela b">
+                                <select id="tipologia" id="tipologia">
+                                    <option value="">Tipologia</option> 
+                                    <option value="T0">T0</option> 
+                                    <option value="T1">T1</option> 
+                                    <option value="T2">T2</option>
+                                    <option value="T3">T3</option>
+                                </select>
+                            </td>
+                            <td class="cima_tabela b"><input type="number" id="area" name="area_util" placeholder=" Área útil" ></td>
+                            <td class="cima_tabela b">
+                                <select class="idade" id="idade">
+                                    <option style="display: none;" value="">Idade do imóvel</option> 
+                                    <option value="1">5 anos ou menos</option> 
+                                    <option value="0.95">Entre 5 e 10 anos</option>  
+                                    <option value="0.9">Mais de 10 anos</option>
+                                </select>
+                            </td>
+                            <td class="cima_tabela b">
+                                <select class="garagem" id="garagem">
+                                    <option style="display: none;" value="">Garagem</option> 
+                                    <option value="1">Sim</option> 
+                                    <option value="0.95">Não</option>  
+                                </select>
+                            </td>
+                            <td class="b">
+                                <select class="transportes " id="transporte">
+                                    <option style="display: none;" value="">Proximidade de Transportes Públicos</option> 
+                                    <option value="1">Sim</option> 
+                                    <option value="0.95">Não</option>  
+                                </select>
+                            </td> 
+                            <td>
+                                <select class="defesa" id="meu">
+                                    <option style="display: none;" value=""> Nome </option>
+                                    <option value = "2">Luís</option>
+                                    <option value = "1">Travassos</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="baixo">
+                            <td colspan="5" class="baixo_tabela"><button id="submit">Send</button></td>
+                        </tr>
+                    </table>
+            </div>
+            
+
+            <!--____________________tabela preços_____________________________________________-->
+            <!--____________________tabela preços 2_____________________________________________-->
+
+            <div id="tabela2" >
+                <table>
+                    <tr class="zonas show">
+                        <td>Zona 1<br><br><span id="s1"></span></td>
+                        <td>Zona 2<br><br><span id="s2"></span></td>
+                        <td>Zona 3<br><br><span id="s3"></span></td>
+                    </tr>
+                    <tr>
+                        <td><button id="btn1">Financiamento 1</button></td>
+                        <td><button id="btn2">Financiamento 2</button></td>
+                        <td><button id="btn3">Financiamento 3</button></td>
+                    </tr>
+                    <tr class="detalhes">
+                        <td id="zona_1"></td>
+                        <td id="zona_2"></td>
+                        <td id="zona_3"></td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <!--____________________tabela preços 2_____________________________________________-->
+            <!--____________________________________tabela finanças_________________________________________________-->
+            <table id="tabela3">
+                <tr>
+                    <td id="fin1">s</td>
+                    <td id="fin2">s</td>
+                    <td id="fin3">s</td>
+                </tr>
+            </table>
+            <!--________________________________________________tabela finanças_____________________________________________________-->
+            <table id="def" >
+                <tr>
+                    <td id="def2">Defesa</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+
+    <!------------------------------------------------imagem fundo------------------------------------------------------------------------->
+    
+    
+    <!------------------------------------------------imagens meio---------------------------------------------------------->
+    <div class="divisor1"></div>
+
+    <div class="seccaomeio">
+        <div class="textosmeio">
+            <h2 class="titulomeio1">Comprar ou Arrendar Imóveis?</h2>
+            <p class="titulomeio2">Consulte toda a nossa oferta que temos para si.</p>
+        </div>
+
+        <div id="fixBack" class="imagensmeio">
+            <div class="blocoesquerdameio">
+                <a href="https://www.kwselect.pt/imoveis/?bus=1">
+                    <div class="bordameio"></div>
+                    <div class="blocomeioe"></div>
+                    <div class="titulomeio3">
+                        <p >Imóveis para Venda</p>
+                    </div>
+                </a>
+            </div>
+            <div class="divisorblocos"></div>
+            <div class="blocodireitameio">
+                <a href="https://www.kwselect.pt/imoveis/?bus=2" id="area1">
+                    <div class="bordameio"></div>
+                    <div class="blocomeiod"></div>
+                    <div class="titulomeio4">
+                        <p>Imóveis para Arrendamento</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="divisormeio"></div>
+    </div>
+    <!----------------------------------------------imagens meio-------------------------------------------------------------->
+    <!--________________________________________6 imagens_____________________________________________________________________-->
+    <div class="seccaoabaixomeio">
+        <div class="textosabaixomeio">
+            <h2 class="tituloabaixomeio1">Destaques da Semana</h2>
+            <p class="tituloabaixomeio2">Quer receber todas as atualizações? Subscreva a nossa newsletter</p>
+        </div>
+  
+        <div class="divabaixomeio">
+            <div class="divabaixomeio1">
+  
+            <div class="div1"><a href="https://www.kwselect.pt/imovel/lote-de-terreno-para-construcao-a-poucos-metros-do-mar-sao-martinho-porto/15575372">
+                <div class="blocodivam1div1"></div>
+                <div class="titulodiv1">
+                    <div class="titulodiva"><p class="tituloam1">LOTE DE TERRENO PARA CONSTRUÇÃO, A POUCOS METROS DO MAR - SÃO MARTINHO PORTO</p></div>
+                    <div class="titulodivb"><p class="tituloam2">ALCOBAÇA > SÃO MARTINHO DO PORTO</p></div>
+                    <div class="titulodivc"><p><span class="tituloam3">VENDA:</span> <span class="tituloam1">128 000 €</p></div>
+                </div>
+            </a></div>
+  
+            <div class="div2"><a href="https://www.kwselect.pt/imovel/excelente-t2-junto-a-circunvalacao-com-lugar-de-garagem-e-terraco/18864605">
+                <div class="blocodivam1div2"></div>
+                <div class="titulodiv2">
+                    <div class="titulodiva"><p class="tituloam1">EXCELENTE T2 JUNTO À CIRCUNVALAÇÃO COM LUGAR DE GARAGEM E TERRAÇO</p></div>
+                    <div class="titulodivb"><p class="tituloam2">PORTO > PARANHOS</p></div>
+                    <div class="titulodivc"><p><span class="tituloam3">VENDA:</span> <span class="tituloam1">290 000 €</span></p></div>
+                </div>
+            </a></div>
+  
+            <div class="div3"><a href="https://www.kwselect.pt/imovel/apartamento-t2-em-condominio-privado-com-piscina-jardins-ginasio-banho-turco-e-sauna-no-lumiar/18996801">
+                <div class="blocodivam1div3"></div>
+                    <div class="titulodiv3">
+                    <div class="titulodiva"><p class="tituloam1">APARTAMENTO T2 EM CONDOMÍNIO PRIVADO COM PISCINA, JARDINS, GINÁSIO, BANHO TURCO E SAUNA NO LUMIAR</p></div>
+                    <div class="titulodivb"><p class="tituloam2">LUMIAR </p></div>
+                    <div class="titulodivc"><p><span class="tituloam3">VENDA:</span> <span class="tituloam1">430 000 €</span></p></div>
+                </div>
+            </a></div>
+  
+          </div>
+  
+        <div class="divabaixomeio2">
+  
+            <div class="div4"><a href="https://www.kwselect.pt/imovel/apartamento-t3-em-construcao-duplex/18197056">
+                <div class="blocodivam1div4"></div>
+                <div class="titulodiv4">
+                    <div class="titulodiva"><p class="tituloam1">APARTAMENTO T3 EM CONSTRUÇÃO - DÚPLEX</p></div>
+                    <div class="titulodivb"><p class="tituloam2">MONTIJO > MONTIJO E AFONSOEIRO</p></div>
+                    <div class="titulodivc"><p><span class="tituloam3">VENDA:</span> <span class="tituloam1">450 000 €</span></p></div>
+                </div>
+            </a></div>
+  
+            <div class="div5"><a href="https://www.kwselect.pt/imovel/fantastico-t5-em-areeiro-com-vista-panoramica-sobre-lisboa/18240444">
+                <div class="blocodivam1div5"></div>
+                <div class="titulodiv5">
+                    <div class="titulodiva"><p class="tituloam1">FANTÁSTICO T5 EM AREEIRO COM VISTA PANORÂMICA SOBRE LISBOA</p></div>
+                    <div class="titulodivb"><p class="tituloam2">LISBOA > AREEIRO</p></div>
+                    <div class="titulodivc"><p><span class="tituloam3">VENDA:</span> <span class="tituloam1">990 000 €</span></p></div>
+                </div>
+            </a></div>
+  
+            <div class="div6"><a href="https://www.kwselect.pt/imovel/trespasse-de-loja-de-85m2-com-saida-de-fumos-em-zona-premium/18793978">
+                <div class="blocodivam1div6"></div>
+                <div class="titulodiv6">
+                    <div class="titulodiva"><p class="tituloam1">TRESPASSE DE LOJA DE 85M2, COM SAÍDA DE FUMOS, EM ZONA PREMIUM!</p></div>
+                    <div class="titulodivb"><p class="tituloam2">SANTA MARIA MAIOR</p></div>
+                    <div class="titulodivc"><p><span class="tituloam3">ARRENDAMENTO:</span> <span class="tituloam1">50 000 €</span></p></div>
+                </div>
+            </a></div>
+  
+          </div>
+  
+        </div>
+    </div>
+    <!--________________________________________6 imagens_____________________________________________________________________-->
+    <!--________________________________________formulario____________________________________________________________________-->
+    <div class="seccaoformulario">
+        <div class="formulario">
+            <div class="textoform1"><p>NÃO PERCA AS NOSSAS ÚLTIMAS</p></div>
+            <div class="textoform2"><p>NOVIDADES</p></div>
+            <div class="form">
+                <form action=""> <!--falta aqui o mail ou assim e a animação do butão-->
+                <input type="text" name="user" placeholder="Nome" required> <br>
+                <input type="email" name="mail" placeholder="Email" required> <br>
+                <a href="" class="formlink">
+                <input class="news" type="submit" value="Subscrever Newsletter">
+                </a>
+                </form>
+            </div>
+        </div>
+    </div>
+  
+      <div class="seccaoacimafooter">
+        
+      </div>
+    <!--_____________________________________________formulario_____________________________________________________________________________-->
+<!--___________________________footer_______________________________________________-->
+
+    <footer>
+        
+        <div class="upper">
+            <a class="logo" href="https://www.kwselect.pt">              <!--A logo-->
+                <img src="img\logo.png" width="130.25px" height="75.97px">
+            </a>
+            <div class="butoes">
+                <a href="https://pt-pt.facebook.com/KWSelect/" target="_blank">        
+                    <img src="img\Facebook_button.PNG" width="38px" height="38px">
+                </a>
+                <a href="https://www.instagram.com/kwselect_portugal/" target="_blank">             
+                    <img src="img\Insta_button.PNG" width="38px" height="38px">
+                </a>
+            </div>
+        </div>
+
+        <div class="Mbaixo">
+            <div class="cima ">
+                <h5 class="linha_1">Blue Select - Mediação Imobiliária, Lda / AMI 12352</h5>
+                <h5>Resolução Alternativa de Litígios | <a href="https://www.livroreclamacoes.pt/Inicio/">Livro de Reclamações online</a></h5>          
+                <h5 class="imagem linha_3">
+                    <a href="https://www.egorealestate.com">CRM e Sites Imobiliários by</a>
+                    <a href="https://www.egorealestate.com"><img src="img\eGO logo.png" height="23.85px" width="120px"/></a>
+                </h5>
+            </div>
+
+            <h5 class="imagem baixo">
+                <a href="https://supercasa.pt/pro/kw-select-lisboa-2851">Estamos no</a>
+                <a href="https://supercasa.pt/pro/kw-select-lisboa-2851"><img src="img\SuperCasa.PNG" height="40px" width="136.94px"/></a>
+            </h5>
+        </div>
+                    
+
+    </footer>
+<!--___________________________footer_______________________________________________-->
+<script src="Tweb.js"></script>
+</body>
+</html>
